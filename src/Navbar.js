@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links, social } from './data';
 import logo from './logo.svg';
+import forEachdark from './forEachdark.png';
 
 const Navbar = () => {
     const [showLinks, setShowLinks] = useState(false);
@@ -23,7 +24,7 @@ const Navbar = () => {
         <nav>
             <div className="nav-center">
                 <div className="nav-header">
-                    <img src={logo} alt="logo" className="logo" />
+                    <img src={forEachdark} alt="logo" className="logo" />
                     <button className="nav-toggle" onClick={toggleLinks}>
                         <FaBars />
                     </button>
